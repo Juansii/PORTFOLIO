@@ -30,6 +30,7 @@ html {
 
 li a {
   text-decoration: none;
+
 }
 
 .contenedor-header header .logo a {
@@ -79,10 +80,9 @@ li a {
   text-align: center;
 }
 
-
 .inicio .contenido-personal {
   padding: 20px;
-  background-color: #211a3a;
+  background-color:#504f53;
   max-width: 350px;
   max-height: 450px;
   margin: auto;
@@ -142,9 +142,9 @@ li a {
 }
 
 .sobremi .fila {
-   display: flex;
-    padding-top: 20px;
-    gap: 20px;
+  display: flex;
+  padding-top: 20px;
+  gap: 20px;
 }
 
 .sobremi .contenido-seccion p {
@@ -161,7 +161,7 @@ li a {
   margin-bottom: 20px;
 }
 
-.sobremi .fila .columna h3{
+.sobremi .fila .columna h3 {
   font-size: 22px;
   margin-bottom: 25px;
 }
@@ -175,23 +175,23 @@ li a {
 }
 
 .sobremi .fila .columna ul li strong {
-    display: inline-block;
-    width: 130px;
-    color: #1CB698;
+  display: inline-block;
+  width: 130px;
+  color: #1CB698;
 }
 
 .sobremi .fila .columna ul li span {
-    background-color: #1CB698;
-    border-radius: 2px;
-    padding: 3px;
-  } 
+  background-color: #1CB698;
+  border-radius: 2px;
+  padding: 3px;
+}
 
-.sobremi .fila .columna .contenedor-intereses{
+.sobremi .fila .columna .contenedor-intereses {
   display: flex;
   flex-wrap: wrap;
 }
 
-.sobremi .fila .columna .contenedor-intereses .interes{
+.sobremi .fila .columna .contenedor-intereses .interes {
   width: 100px;
   height: 100px;
   background-color: grey;
@@ -210,7 +210,7 @@ li a {
   margin-bottom: 5px;
 }
 
-.sobremi .fila .columna .contenedor-intereses .interes:hover{
+.sobremi .fila .columna .contenedor-intereses .interes:hover {
   background-color: gainsboro;
   color: #1CB698;
 }
@@ -234,7 +234,7 @@ button {
   text-decoration: none;
 }
 
-.sobremi button .overlay{
+.sobremi button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -244,35 +244,116 @@ button {
   z-index: -1;
   transition: 1s;
 }
-.sobremi button:hover .overlay{
- width: 100%;
+
+.sobremi button:hover .overlay {
+  width: 100%;
 }
 
-#cv {
+#habilidades {
   background-color: #3d3c3f;
   padding: 50px 20px;
   justify-content: center;
   color: #fff;
 }
 
-#cv .contenedor-cv {
+#habilidades .contenedor-habilidades {
   max-width: 1100px;
   margin: auto;
 }
 
-#cv h2 {
+#habilidades h2 {
   font-size: 38px;
   text-align: center;
   padding: 20px 0;
 }
 
-#cv .fila-cv {
-  display: flex;  
+#habilidades h4 {
+  color: #1CB698;
+}
+
+#habilidades .fila-habilidades {
+  display: flex;
   padding: 20px 0;
   gap: 20px;
 }
 
-#cv .fila-cv .columna-cv {
+#habilidades .fila-habilidades .columna-habilidades {
   width: 50%;
   padding: 0 20px;
 }
+
+#habilidades .habilidad >span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#habilidades .habilidad .barra-habilidades {
+  height: 8px;
+  width: 80%;
+  background-color: #131517;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#habilidades .habilidad .progreso {
+  background-color: #1CB698;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+
+#habilidades .habilidad .barra-habilidades span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1CB698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+
+.habilidades .habilidad .html {
+  width: 0%;
+  animation: 2s html forwards;
+}
+
+@keyframes html {
+  0% {width: 0%;}
+  100% {width: 95%;}
+}
+
+.habilidades .habilidad .css {
+  width: 0%;
+  animation: 2s css forwards;
+}
+
+@keyframes css {
+  0% {width: 0%;}
+  100% {width: 90%;}
+}
+
+.habilidades .habilidad .javascript {
+width: 0%;
+animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+  0%{width: 0%;}
+  100%{width: 85%;}
+}
+
+.habilidades .habilidad .react {
+  width: 0%;
+  animation: 2s react forwards;
+}
+
+@keyframes react {
+  0% {width: 0%;}
+  100%{width: 85%;}
+}
+  
+
