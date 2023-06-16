@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
 
 html {
@@ -13,13 +14,13 @@ html {
   background-color: gainsboro;
   position: fixed;
   width: 100%;
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
   z-index: 99;
 }
 
 .contenedor-header header {
-  max-width: 1100px; 
+  max-width: 1100px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -37,7 +38,7 @@ li a {
   font-family: 'Righteous';
   font-size: 26px;
   text-decoration: none;
-  color: turquoise;  
+  color: turquoise;
 }
 
 .contenedor-header header ul {
@@ -47,8 +48,8 @@ li a {
 
 .contenedor-header header ul li a {
   text-align: none;
-  color: #fff; 
-  margin: 0 15px; 
+  color: #fff;
+  margin: 0 15px;
   padding: 3px;
   transition: .5s;
 }
@@ -60,16 +61,17 @@ li a {
 .nav-responsive {
   padding: 5px 10px;
   border-radius: 5px;
+  background-color: rgb(70, 70, 121);
   cursor: pointer;
-  display: none; 
+  display: none;
 }
 
 .nav-responsive i:hover {
   background-color: turquoise;
 }
 
-#sobre-mi {
-  background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(img/program.jpg);
+#inicio {
+  background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(../img/program2.jpg);
   background-size: cover;
   height: 100vh;
   color: whitesmoke;
@@ -79,13 +81,206 @@ li a {
   text-align: center;
 }
 
-.contenedor-imagen img {
-  border-radius: 50%;
+
+.inicio .contenido-personal {
+  padding: 20px;
+  background-color: #211a3a;
+  max-width: 350px;
+  max-height: 450px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
 }
 
-.icon {
-  background-color: aliceblue;
-  border-radius: 30%;
+.contenedor-imagen img {
+  max-width: 250px;
+  margin-top: 6px;
+  border-radius: 50%;
+  border: 10px groove gainsboro;
+}
+
+.inicio .contenido-personal h1 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.inicio .contenido-personal h2 {
+  margin: 4px 4px;
+  font-size: 30px;
+}
+
+.inicio .contenido-personal .redes a {
+  display: inline-block;
+  background-color: gainsboro;
+  text-decoration: none;
+  border-radius: 80%;
   padding: 10px;
-  gap: 5px; 
+  border: 10 solid #fff;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+}
+
+.inicio .contenido-personal .redes a:hover {
+  background-color: rgb(134, 132, 132);
+}
+
+#sobremi {
+  background-color: #504f53;
+  padding: 50px 20px;
+  justify-content: center;
+  color: #fff;
+
+}
+
+.sobremi .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sobremi h2 {
+  font-size: 38px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sobremi .fila {
+   display: flex;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+
+.sobremi .contenido-seccion p {
+  font: 48px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.sobremi .fila .columna {
+  width: 50%;
+}
+
+.contenido-seccion .fila .columna {
+  margin-bottom: 20px;
+}
+
+.sobremi .fila .columna h3{
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.fila .columna ul {
+  list-style: none;
+}
+
+.sobremi .fila .columna ul li {
+  margin: 10px 0;
+}
+
+.sobremi .fila .columna ul li strong {
+    display: inline-block;
+    width: 130px;
+    color: #1CB698;
+  }
+
+  .sobremi .fila .columna ul li span {
+    background-color: #1CB698;
+    border-radius: 2px;
+    padding: 3px;
+  } 
+
+.sobremi .fila .columna .contenedor-intereses{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobremi .fila .columna .contenedor-intereses .interes{
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border-radius: 8px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.sobremi .fila .columna .contenedor-intereses .interes i {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.sobremi .fila .columna .contenedor-intereses .interes:hover{
+  background-color: gainsboro;
+  color: #1CB698;
+}
+
+
+.sobremi button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid black;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 2px;
+  z-index: 10;
+}
+
+button {
+  text-decoration: none;
+}
+
+.sobremi button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1CB698;
+  z-index: -1;
+  transition: 1s;
+}
+.sobremi button:hover .overlay{
+ width: 100%;
+}
+
+
+#cv {
+  background-color: #3d3c3f;
+  padding: 50px 20px;
+  justify-content: center;
+  color: #fff;
+
+}
+
+#cv .contenedor-cv {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#cv h2 {
+  font-size: 38px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+#cv .fila-cv {
+  display: flex;  
+  padding: 20px 0;
+  gap: 20px;
+}
+
+#cv .fila-cv .columna-cv {
+  width: 50%;
+  padding: 0 20px;
 }
