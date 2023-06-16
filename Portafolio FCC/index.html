@@ -21,51 +21,151 @@
       <nav id="nav-link">
         <ul class="nav-list">
           <li> <a href="inicio"> INICIO </a> </li>
-          <li> <a href="sobre-mi"> SOBRE MI </a> </li>
+          <li> <a href="inicio"> SOBRE MI </a> </li>
           <li> <a href="cv"> CURRICULUM VITAE </a> </li>
           <li> <a href="proyectos"> PROYECTOS </a> </li>
           <li> <a href="contacto"> CONTACTO </a> </li>
         </ul>
       </nav>
-      <div class="nav-responsive">
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
 
     </header>
   </div>
 
-  <section id="sobre-mi"> 
+  <section id="inicio" class="inicio">
     <div class="contenido-personal">
-
       <div class="contenedor-imagen">
         <img src="img/juann.png" alt="" class="me">
       </div>
       <h1> Juan Simon </h1>
-      <h2> front end developer </h2>
+      <h2> Front end developer </h2>
       <div class="redes">
-        <a href="#"> <i class="fa-brands fa-facebook icon"></i> </a> </i>
+        <a href="#"> <i class="fa-brands fa-facebook icon"></i> </a>
         <a href="#"> <i class="fa-brands fa-twitter icon"></i> </a>
-        <a href="#"> <i class="fa-brands fa-instagram icon"></i> </a>
+        <a href="#"> <i class="fa-brands fa-square-instagram icon"></i> </a>
         <a href="#"> <i class="fa-brands fa-linkedin icon"></i> </a>
       </div>
-      
-
     </div>
-
-
   </section>
 
-  <section id="curriculum"> 
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2> SOBRE MI</h2>
+      <p><span> Hola, soy Juan Simón Zarauz. </span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quisquam
+        unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti
+        repellendus
+        aliquid
+        debitis maiores numquam voluptate reprehenderit in delectus dolores.
+      </p>
+      <div class="fila">
+        <!-- DATOS PERSONALES -->
+        <div class="columna">
+          <h3>DATOS PERSONALES </h3>
+          <ul>
+            <li> <strong> Fecha de nacimiento: </strong> 27/02/1990</li>
 
+            <li> <strong> Ciudad: </strong> Córdoba Capital, Argentina</li>
+            <li> <strong> Telefono: </strong> 358 5737204</li>
+            <li> <strong> Mail: </strong> simonzarauz@gmail.com</li>
+            <li> <strong> Cargo: </strong> <span> FREELANCE</span></li>
+          </ul>
+        </div>
+        <div class="columna">
+          <!-- INTERESES -->
+          <h3>INTERESES </h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-sharp fa-solid fa-plane"></i>
+              <span> Viajar</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-book"></i>
+              <span> Leer </span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-kitchen-set"></i>
+              <span> Cocinar </span>
+          </div>
 
+            <div class="interes">
+              <i class="fa-sharp fa-solid fa-person-running"></i>
+              <span> Correr </span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-tree"></i>
+              <span> Aire libre </span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-camera"></i>
+              <span>Fotos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </div>
   </section>
 
-  <section id="mis-proyectos"> 
-
-
+  <section id="cv" class="cv">
+    <div class="contenedor-cv">
+      <h2> CURRICULUM VITAE</h2>
+      <div class="fila-cv">
+        <div class="columna-cv">
+          <div class="habilidades-p">
+              <i class="fa-solid fa-people-group"></i>
+              <span> TRABAJO EN EQUIPO </span>
+           </div>
+          <div class="habilidades-p">
+            <i class="fa-solid fa-wrench"></i>
+            <span> RESOLUCIÓN DE PROBLEMAS </span>
+          </div>
+          <div class="habilidades-p">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <span> DEDICACIÓN </span>
+          </div>
+          <div class="habilidades-p">
+            <i class="fa-solid fa-lightbulb-exclamation-on"></i>
+            <span> CREATIVIDAD </span>
+          </div>
+        </div>
+        <div class="columna-cv">
+          <div class="habilidades-t">
+              <i class="fa-brands fa-html5"></i> 
+              <span> HTML </span>
+          </div>
+          <div class="habilidades-t">
+            <i class="fa-brands fa-css3-alt"></i> 
+             <span> CSS </span>
+          </div>
+          <div class="habilidades-t">
+            <i class="fa-brands fa-square-js"></i>
+             <span> JAVASCRIPT </span>
+          </div>
+          <div class="habilidades-t">
+            <i class="fa-brands fa-react"></i>
+            <span> REACT</span>
+          </div>
+          </div>
+      </div>
+    </div>
   </section>
 
-  <section id="mi-contacto"> 
+  <div class="container calculadora">
+
+  </div>
+  <div class="container licuadora"></div>
+  <div class="container formulario"></div>
+  <div class="container carrito-compra"></div>
+  <div class="container fichaje"></div>
+  </div>
+
+  <section id="mi-contacto">
 
 
   </section>
