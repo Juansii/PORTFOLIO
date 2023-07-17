@@ -72,6 +72,7 @@ html {
   color: #fff;
   display: flex;
   align-items: center;
+  margin-top: 2.18rem;
 }
 
 .inicio .contenido-personal {
@@ -283,7 +284,7 @@ html {
 }
 
 .habilidades .columna h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #1CB698;
 }
 
@@ -306,7 +307,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  height: 8px;
+  height: 0.5rem;
 }
 
 .habilidades .habilidad .barra span{
@@ -317,9 +318,9 @@ html {
   border-radius: 3.125rem;
   line-height: 2.5rem;
   text-align: center;
-  top: -17px;
-  right: -15px;
-  font-size: 14px;
+  top: -1.06rem;
+  right: -0.93rem;
+  font-size: 0.87rem;
 }
 
 /* forwards sirve para que una vez de ejercutada la animacion el efecto se quede en esa posición y no regrese al inicio */
@@ -463,6 +464,19 @@ html {
   margin-bottom: 0px;
 }
 
+@media screen and (max-width: 650px) {
+  .contenedor-header .header .logo {
+    display: none; 
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contenedor-header .header  {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width:  450px) {
   .fila {
     display: inline-block
@@ -476,4 +490,6 @@ html {
     font-size: .5rem;
   }
 }
+
+
 
