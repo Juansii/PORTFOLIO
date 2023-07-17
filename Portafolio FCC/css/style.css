@@ -9,6 +9,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.contenido-principal {
+  font-size: 22px;
+}
 
 .contenedor-header {
   background-color: #1e2326;
@@ -20,16 +23,16 @@ html {
 }
 
 .contenedor-header header {
-  max-width: 1100px;
+  max-width: 68.75em;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 0.9375rem 1.25rem;
 }
 
 .contenedor-header header .logo a {
-  font-size: 36px;
+  font-size: 2.25em;
   color: white;
   text-decoration: none;
 }
@@ -42,8 +45,8 @@ html {
 .contenedor-header header nav ul li a {
   text-align: none;
   color: #fff;
-  margin: 0 15px;
-  padding: 3px;
+  margin: 0 0.93rem;
+  padding: 0.19rem;
   transition: .5s;
   text-decoration: none;
 }
@@ -56,7 +59,7 @@ html {
 .nav-responsive {
   background-color: #1CB698;
   color: #fff;
-  padding: 5px 10px;
+  padding: 0.31rem 0.62rem;
   border-radius: 5px;
   cursor: pointer;
   display: none;
@@ -72,16 +75,16 @@ html {
 }
 
 .inicio .contenido-personal {
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #717a80;
-  max-width: 350px;
+  max-width: 22rem;
   margin: auto;
   text-align: center;
   border-radius: 40px;
 }
 
 .inicio .contenido-personal img {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   border: 10px solid #4a5861;
   display: block;
   width: 80%;
@@ -90,14 +93,14 @@ html {
 }
 
 .inicio .contenido-personal h1 {
-  font-size: 28px;
-  margin-top: 40px;
+  font-size: 1.75em;
+  margin-top: 2.5rem;
   color: #150b33;
 }
 
 .inicio .contenido-personal h2 {
-  font-size: 22px;
-  margin-top: 20px;
+  font-size: 1.4em;
+  margin-top: 1.25rem;
   color: #150b33;
 }
 
@@ -106,18 +109,18 @@ html {
   display: inline-block;
   text-decoration: none;
   border: 1px solid #1e2326;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border-radius: 100%;
   line-height: 50px;
-  margin: 20px 5px;
-  font-size: 20px;
+  margin: 1.25rem 0.31rem;
+  font-size: 1.25rem;
   transition: .3s;
 }
 
 .inicio .contenido-personal .redes a:hover {
   background-color: #423f74;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: white;
 }
 /*  a esto lo dejo como ejemplo de como aplicar media - a los 740px desaparece el header
@@ -131,24 +134,24 @@ html {
 .sobremi {
   background-color: #1e2326;
   color: white; 
-  padding: 50px 20px;
+  padding: 3.12rem 1.25rem;
 }
 
 .sobremi .contenido-seccion {
-  max-width: 1100px;
+  max-width: 68.7rem;
   margin: auto;
 }
 
 .sobremi h2 {
-  font-size: 48px;
+  font-size: 2.6em;
   text-align: center;
   padding: 20px 0;
 }
 
 .sobremi .contenido-seccion  p {
-  font-size: 28px;
-  line-height: 22px;
-  margin-bottom: 20px;
+  font-size: 1.75em;
+  line-height: 1.375rem;
+  margin-bottom: 1.25rem;
 }
 
 .sobremi p span{
@@ -165,24 +168,24 @@ html {
 }
 
 .sobremi .fila .columna h3 {
-  font-size: 28px;
-  margin-top: 25px;
+  font-size: 1.75em;
+  margin-top: 1.5625rem;
 }
 
 .sobremi .fila .columna ul li {
   list-style: none; 
-  margin: 12px 0;
+  margin: 0.75rem 0;
 }
 
 .sobremi .fila .columna ul li strong {
   display: inline-block;
   color: #1CB698;
-  width: 130px;
+  width: 8.125rem;
 }
 
 .sobremi .fila .columna ul li span {
   background-color: #717a80;
-  padding: 5px;
+  padding: 0.3125rem;
   border: 1px solid #1CB698; 
   border-radius: 7px; 
 }
@@ -193,11 +196,11 @@ html {
 }
 
 .sobremi .fila .columna .contenedor-intereses .interes {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   background-color: #373f46;
-  margin: 0 15px 15px 0;
-  border-radius: 10px;
+  margin: 0 0.93rem 0.93rem 0;
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,12 +212,12 @@ html {
 .sobremi .fila .columna .contenedor-intereses .interes:hover {
   background-color: #535a5e;
   color: #44b39c;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .sobremi .fila .columna .contenedor-intereses .interes i{
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .sobremi .contenido-seccion  button {
@@ -224,8 +227,8 @@ html {
   display: block;
   width: fit-content;
   border-radius: 7px;
-  padding: 7px 10px;
-  font-size: 16px;
+  padding: 0.4375rem 0.625rem;
+  font-size: 1em;
   position: relative;
   z-index: 10;
   color: white;
@@ -256,18 +259,18 @@ html {
 .habilidades {
   background-color: #1e2326;
   color: white; 
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
 }
 
 .habilidades .contenido-seccion {
-  max-width: 1100px;
+  max-width: 68.75rem;
   margin: auto;
 }
 
 .habilidades h2 {
-  font-size: 48px;
+  font-size: 2.6em;
   text-align: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .habilidades .fila {
@@ -276,7 +279,7 @@ html {
 
 .habilidades .columna {
   width: 50%;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 .habilidades .columna h4 {
@@ -286,16 +289,16 @@ html {
 
 .habilidad span {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: block;
 }
 
 .habilidades .habilidad .barra{
-  height: 8px;
+  height: 0.5rem;
   width: 80%;
   background-color: #131517;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .habilidades .habilidad .progreso{
@@ -308,11 +311,11 @@ html {
 
 .habilidades .habilidad .barra span{
   position: absolute;
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   background-color: #1CB698;
-  border-radius: 50px;
-  line-height: 40px;
+  border-radius: 3.125rem;
+  line-height: 2.5rem;
   text-align: center;
   top: -17px;
   right: -15px;
@@ -406,7 +409,7 @@ html {
 }
 
 .proyectos h2 {
-  font-size: 48px;
+  font-size: 3em;
   text-align: center;
   padding: 20px 0 50px 0;
 }
@@ -458,5 +461,19 @@ html {
 
 .proyectos .fila .columna .overlay:hover h3 {
   margin-bottom: 0px;
+}
+
+@media screen and (max-width:  450px) {
+  .fila {
+    display: inline-block
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contenido-principal  {
+    display: inline-block;
+    width: 100%;
+    font-size: .5rem;
+  }
 }
 
