@@ -71,6 +71,7 @@ html {
   background-size: cover;
   height: 100vh;
   color: #fff;
+  margin-top: 25px;
   display: flex;
   align-items: center;
 
@@ -191,6 +192,12 @@ html {
   width: 130px;
 }
 
+.sobremi .fila .columna ul li span {
+  background-color: #717a80;
+  padding: 3px;
+  border: 1px solid #1CB698; 
+  border-radius: 7px; 
+}
 /*
 .sobremi .fila .columna h3:hover {
   color: #1CB698;
@@ -276,8 +283,7 @@ html {
   margin: auto;
 }
 
-
-.habilidades .contenedor-habilidades h2 {
+.contenedor-habilidades h2 {
   font-size: 48px;
   text-align: center;
   padding: 20px 0;
@@ -288,27 +294,37 @@ html {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  animation: move 4s ease forwards;
-
 } 
-
-@keyframes move {
- 
-  1% {
-    transform: translate(100%);
-  }
-}
-
-
 
 .contenedor-habilidades .fila img {
   display: block;
   margin: 25px 0;
   width: 150px;
+  animation-name: girarb;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes girarb {
+  from {
+   transform: rotate(0deg);
+  } to { 
+   transform: rotate(360deg);
+  }
 }
 
 .fila  .habilidad span {
   font-size: 24px;
+  transition: .5s;
+}
+
+.fila  .habilidad span:hover {
+  text-decoration:underline;
+  font-weight: bold;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 
@@ -353,8 +369,8 @@ html {
 
 .proyectos .galeria {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 .proyectos .galeria .proyecto {
@@ -433,7 +449,6 @@ html {
 .contacto .contenido-seccion button {
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #fff;
   display: block;
   width: fit-content;
   margin: 20px auto;
@@ -442,11 +457,66 @@ html {
   color: #fff;
   position: relative;
   z-index: 10;
+  overflow: hidden;
+  transition: .5s;
 }
 
 .contacto .contenido-seccion button:hover {
   background-color: #373f46;
+  font-size: 18px;
 }
+
+button span {
+  position: absolute;
+  background-color: white;
+  transition: .7s;
+}
+
+button span:nth-child(1) {
+  width: 100%; 
+  height: 2px;
+  top: 0;
+  left: -100%;
+}
+
+button span:nth-child(2) {
+  width: 100%; 
+  height: 2px;
+  bottom: 0;
+  left: 100%;
+}
+
+button span:nth-child(3) {
+  width: 2px; 
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
+
+button span:nth-child(4) {
+  width: 2px; 
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
+
+button:hover span:nth-child(1) {
+  left: 0;
+}
+
+button:hover span:nth-child(2) {
+  left: 0;
+}
+
+button:hover span:nth-child(3) {
+  bottom: 0;
+}
+
+button:hover span:nth-child(4) {
+  top: 0;
+}
+
+
 
 footer {
   background: linear-gradient(to bottom, #1e2326, #2c3d46);
@@ -542,13 +612,18 @@ footer .redes a:hover {
   }
 
   .habilidades .fila{
-      display: block;
+    display: block;
   }
-  .habilidades .fila .columna{
-      width: 100%;
+
+  .habilidades .fila .habilidad img {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    margin: 35px auto;
+    
   }
-  .habilidades .fila .columna .barra{
-      width: 100%;
+  .habilidades .fila .habilidad span {
+    display: none;
   }
 
   .proyectos .contenedor-proyectos h2 {
