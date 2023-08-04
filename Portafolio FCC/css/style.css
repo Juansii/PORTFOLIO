@@ -191,12 +191,6 @@ html {
   width: 130px;
 }
 
-.sobremi .fila .columna ul li span {
-  background-color: #717a80;
-  padding: 3px;
-  border: 1px solid #1CB698; 
-  border-radius: 7px; 
-}
 /*
 .sobremi .fila .columna h3:hover {
   color: #1CB698;
@@ -277,144 +271,67 @@ html {
   padding: 50px 20px;
 }
 
-.habilidades .contenido-seccion {
+ .habilidades .contenedor-habilidades {
   max-width: 1100px;
   margin: auto;
 }
 
-.habilidades h2 {
+
+.habilidades .contenedor-habilidades h2 {
   font-size: 48px;
   text-align: center;
   padding: 20px 0;
-  margin-bottom: 25px;
 }
 
 .habilidades .fila {
   display: flex;
-}
-
-.habilidades .fila .columna {
-  width: 50%;
-  padding: 0 20px;
-}
-
-.habilidades .fila .columna { 
-  font-size: 28px;
-  margin-bottom: 25px; 
-}
-
-.habilidades .habilidad > span {
-  font-weight: bold;
-  font-size: 19px;
-  display: block;
-  margin-top: 8px;
-  margin-bottom: 15px;
-}
-
-.habilidades .habilidad .barra{
-  height: 8px;
-  width: 80%;
-  background-color: #131517;
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.habilidades .habilidad .progreso{
-  background-color: #1CB698;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 8px;
-}
-
-/* porcentajes circulares HABILIDADES */
-.habilidades .habilidad .barra span{
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #1CB698;
-  border-radius: 50px;
-  line-height: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
   text-align: center;
-  top: -17px;
-  right: -15px;
-  font-size: 14px;
-}
+  animation: move 4s ease forwards;
 
-/* forwards sirve para que una vez de ejercutada la animacion el efecto se quede en esa posición y no regrese al inicio */
+} 
 
-.habilidades .habilidad .teamwork {
-  width: 0%;
-  animation: 2s teamwork forwards; 
-}
-@keyframes teamwork {
-  0%{width: 0%;} /* donde inicia */
-  100%{width: 100%;} /* hasta donde llega */
-}
-
-.habilidades .habilidad .comunicacion {
-  width: 0%;
-  animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-  0%{width: 0%;}
-  100%{width: 90%;}
-}
-
-.habilidades .habilidad .dedicacion {
-  width: 0%;
-  animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-  0%{width: 0%;}
-  100%{width: 100%;}
-}
-
-.habilidades .habilidad .creatividad{
-  width: 0%;
-  animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-  0%{width: 0%;}
-  100%{width: 75%;}
-}
-
-.habilidades .habilidad .html{
-  width: 0%;
-  animation: 2s html forwards;
-}
-@keyframes html {
-  0%{width: 0%;}
-  100%{width: 75%;}
+@keyframes move {
+ 
+  1% {
+    transform: translate(100%);
+  }
 }
 
 
-.habilidades .habilidad .css{
-  width: 0%;
-  animation: 2s css forwards;
-}
-@keyframes css {
-  0%{width: 0%;}
-  100%{width: 70%;}
+
+.contenedor-habilidades .fila img {
+  display: block;
+  margin: 25px 0;
+  width: 150px;
 }
 
-.habilidades .habilidad .javascript{
-  width: 0%;
-  animation: 2s javascript forwards;
-}
-@keyframes javascript {
-  0%{width: 0%;}
-  100%{width: 70%;}
+.fila  .habilidad span {
+  font-size: 24px;
 }
 
-.habilidades .habilidad .react{
-  width: 0%;
-  animation: 2s react forwards;
+
+
+
+
+/* 
+
+
+
+.habilidades .fila .habilidad img {
+  width: 150px;
+  height: 150px;
+  
 }
-@keyframes react {
-  0%{width: 0%;}
-  100%{width: 60%;}
+
+.habilidades .fila .habilidad p {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+*/
+
 
 .proyectos {
   background: linear-gradient(to top, #1e2326, #2c3d46);
