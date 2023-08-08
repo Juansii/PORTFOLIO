@@ -562,24 +562,28 @@ footer .redes a:hover {
 
 
 
-@media screen and (max-width:980px){
+@media screen and (max-width:700px){
   nav{
       display: none;
   }
   .nav-responsive{
       display: block;
   }
-  nav.responsive{
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 75px;
-      background-color: #252A2E;
-      width: 1px;
-  }
-  nav.responsive ul{
-      display: block !important;
-  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252A2E;
+    width: 180px;
+}
+nav.responsive ul{
+    display: block !important;
+}
+nav.responsive ul li{
+  border-bottom: 2px solid #fff;
+  padding: 13px 0;
+}
   
 }
 
@@ -639,6 +643,7 @@ footer .redes a:hover {
   }
   .proyectos .galeria .proyecto img{
       width: 100%;
+      margin: 0;
   }
   .contacto {
       display: block;
